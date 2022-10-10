@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 style="text-align: center; text-transform: uppercase">Movies list:</h2>
+
+<div class="movie_table">
+    <div>Title</div>
+    <div>Date</div>
+    <div>Rating</div>
+    {% for movie in movies %}
+        <div><a href="{{movie.id}}">{{movie.title}}</a></div>
+        <div>{{movie.date}}</div>
+        <div>{{movie.rating}}</div>
+    {% endfor %}
+</div>
+
+{%endblock content %}

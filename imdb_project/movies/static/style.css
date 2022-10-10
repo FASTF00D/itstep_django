@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+li{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.movie_table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 15px;
+}
